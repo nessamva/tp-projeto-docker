@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  nginx_site:
+    build:
+      context: ./nginx-site
+      dockerfile: Dockerfile
+    container_name: meu_nginx_site
+    ports:
+      - "8080:80"            # host:container
+    restart: unless-stopped
+
+  apache_site:
+    image: httpd:2.4-alpine
+    container_name: meu_apache_site
+    ports:
+      - "8081:80"
+    volumes:
+      - ./apache-site:/usr/local/apache2/htdocs/:ro
+    restart: unless-stopped
