@@ -18,6 +18,7 @@ projeto-docker/
 ├── apache-site/
 │   └── Dockerfile
 
+```
 ---
 
 ## Acessar os serviços
@@ -25,4 +26,5 @@ projeto-docker/
 - http://localhost:8080 → site estático com Nginx
 
 - http://localhost:8081 → página padrão do Apache HTTPD
+
 
