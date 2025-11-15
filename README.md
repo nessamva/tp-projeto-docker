@@ -9,13 +9,14 @@ Este projeto demonstra como criar e orquestrar dois containers usando Docker Com
 
 ## 🗂️ Estrutura do Projeto
 
-projeto-docker/ 
-├── docker-compose.yml 
-├── nginx-site/ 
-│  ├── Dockerfile 
-│  └── index.html
-├── apache-site/ 
-│  ├── Dockerfile 
+```text
+projeto-docker/
+├── docker-compose.yml
+├── nginx-site/
+│   ├── Dockerfile
+│   └── index.html
+├── apache-site/
+│   └── Dockerfile
 
 ---
 
@@ -24,3 +25,4 @@ projeto-docker/
 - http://localhost:8080 → site estático com Nginx
 
 - http://localhost:8081 → página padrão do Apache HTTPD
+
